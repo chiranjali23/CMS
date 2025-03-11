@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>participant dashboard</title>
+    <link rel="stylesheet" href="participant dashstyle.css">
+</head>
+<body>
+    <header>
+
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="Home page CA.html">Home</a></li>
+                <li><a href="conforence information.html">Conference Information</a></li>
+                <li><a href="participant dash.html">Participant Dashboard</a></li>
+                <li><a href ="#">Log out</a></li>
+            </ul>
+        </nav>
+        
+        <div class="logo">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxwURlz-WQ4P2pcJ6114846CsS_J1iFHhoPhvJeoGjJUnZ4R2izgoH4P9TeFlCdIdAohY&usqp=CAU" >
+         </div>
+        
+        </header>
+        <br>  
+
+ <!-- Schedule Section -->
+ <div id="dashboard">
+    <h1>Welcome, Participant dashboard</h1>
+
+    <!-- Schedule Section -->
+    <div class="section schedule">
+      <h2>Conference Schedule</h2>
+      <ul>
+        <li>10:00 AM - Opening Remarks</li>
+        <li>11:00 AM - Session: AI and machine learning</li>
+        <li>1:00 PM - Workshop: Data Science</li>
+        <li>3:00 PM - Session: cyber security</li>
+      </ul>
+      <a href="#" class="btn">View Full Schedule</a>
+    </div>
+
+    <!-- Registration Section -->
+    <div class="section registrations">
+      <h2>My Registrations</h2>
+      <ul>
+        <li>Session: AI and machine learning <span style="color: #27ae60;">(Registered)</span></li>
+        <li>Workshop: Data Science <span style="color: #27ae60;">(Registered)</span></li>
+      </ul>
+      <a href="register form.php" class="btn">Register for More Sessions</a>
+    </div>
+
+    <!-- Proceedings Section -->
+    <div class="section proceedings">
+      <h2>Access Proceedings</h2>
+      <ul>
+        <li><a href="https://northell.design/wp-content/uploads/2021/11/A_Complete_Web_Development_Guide_For_Non_Technical_Startup_Founder.pdf">View Paper: Web Development in 2024</a></li>
+        <li><a href="https://youtu.be/X3paOmcrTjQ?si=PhEwIJWsqK81mTew">View Video:  Data Science Workshop</a></li>
+      </ul>
+      <a href="#" class="btn">View All Proceedings</a>
+    </div>
+
+    <!-- QR Code Section -->
+    <div class="section qr-code">
+      <h2>QR Code for Entry</h2>
+      <div id="qr-code">
+        <!-- QR Code Image will be inserted here -->
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=YourConferenceQRCodeHere&size=200x200" alt="QR Code">
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    function generateQRCode() {
+      const qrCode = 'https://api.qrserver.com/v1/create-qr-code/?data=YourConferenceQRCodeHere';
+      document.getElementById('qr-code').innerHTML = `<img src="${qrCode}" alt="QR Code" />`;
+    }
+
+    generateQRCode();
+  </script>
+
+
+    <!--Footer Session-->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 International Research Conference</p>
+            <p>Contact us at <a href="mailto:info@conference.com">info@conference.com</a></p>
+            <p>Follow us on: <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+        </div>
+    </footer>

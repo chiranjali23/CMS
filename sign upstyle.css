@@ -1,0 +1,152 @@
+header{
+    height:25px;
+    text-align: center ;
+    padding: 20px;
+    background-color:#087e96;
+    color:
+    text-decoration: none; /* Remove underline */
+    }
+    
+    
+    .navbar ul {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-top: 5px;
+    }
+    
+    .navbar ul li {
+        display: inline;
+    }
+    
+    .navbar ul li a {
+        color:white;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .navbar ul li a:hover {
+        background-color: #00000076; /* Highlight color */
+        color: white;
+    }
+    
+    /* Responsive Navigation Bar */
+    @media (max-width: 768px) {
+        .navbar ul {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    
+        .navbar ul li a {
+            display: block;
+            width: 100%;
+        }
+    }
+    
+    .logo img{
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        position:relative;
+        left:-600px;
+        top: -40px;
+        border: 3px solid #0f0e0e;
+    }
+/*body background colour add*/
+body{
+    background-color: azure;
+}
+
+h1{
+    text-align: center;
+    margin-top: -10px;
+}
+
+/*form background create*/
+.sign{
+    background :white;
+    padding:30px;
+    max-width: 800px;
+    align: center;
+    margin: 0 auto;
+    box-shadow : 0 2px 5px;
+    border-radius: 5px
+ }
+
+ form label{
+    
+    margin: 10px 0px 5px;
+ }
+ input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    background-color: #51e329;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b3b3;
+}
+
+.error-mag{
+    margin: 10px;
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.error-msg{
+    margin:10px;
+    display:block;
+    background: red;
+    color:white;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+
+
+
+     /* Footer Styling */
+.footer {
+    background-color: #056a7e; /* Dark background */
+    color: white; /* Text color */
+    text-align: center; /* Center-align content */
+    padding: 20px 10px; /* Spacing for the footer */
+    font-size: 1em; /* Default font size */
+}
+
+.footer-content a {
+    color: #010508; /* Highlight links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}

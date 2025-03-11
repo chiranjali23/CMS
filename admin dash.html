@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>participant dashboard</title>
+    <link rel="stylesheet" href="admin dashstyle.css">
+</head>
+<body>
+    <header>
+
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="Home page CA.html">Home</a></li>
+                <li><a href="conforence information.html">Conference Information</a></li>
+                <li><a href="admin dash.html">Admin Dashboard</a></li>
+                <li><a href ="#">Log out</a></li>
+            </ul>
+        </nav>
+        
+        <div class="logo">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxwURlz-WQ4P2pcJ6114846CsS_J1iFHhoPhvJeoGjJUnZ4R2izgoH4P9TeFlCdIdAohY&usqp=CAU" >
+         </div>
+        
+        </header>
+        <br>  
+
+
+        <header class="topic">
+            <h1>Admin Dashboard</h1>
+            <p>Manage conference participants, tracks, sessions, and resources.</p>
+        </header>
+        
+    
+    
+        <section>
+            <!-- Participants Section -->
+            <div class="dashboard-section">
+                <h2>View Participant List</h2>
+                <button onclick="window.location.href='participants.html'">View Participants</button>
+            </div>
+    
+            <!-- Manage Tracks and Sessions Section -->
+            <div class="dashboard-section">
+                <h2>Create and Edit Tracks/Sessions</h2>
+                <button onclick="window.location.href='tracks_sessions.html'">Manage Tracks & Sessions</button>
+            </div>
+    
+            <!-- Monitor Registrations and Capacity -->
+            <div class="dashboard-section">
+                <h2>Monitor Registrations</h2>
+                <p>Keep track of session capacities and registered participants.</p>
+                <button onclick="window.location.href='register form.php'">Monitor Registrations</button>
+            </div>
+    
+            <!-- Upload Conference Proceedings -->
+            <div class="dashboard-section">
+                <h2>Upload Conference Proceedings</h2>
+                <form action="upload_proceedings.php" method="POST" enctype="multipart/form-data">
+                    <label for="proceedings-file">Select File:</label>
+                    <input type="file" id="proceedings-file" name="proceedings-file" required>
+                    <button type="submit">Upload</button>
+                </form>
+            </div>
+        </section>
+    
+        
+    
+
+
+        <!--Footer Session-->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 International Research Conference</p>
+            <p>Contact us at <a href="mailto:info@conference.com">info@conference.com</a></p>
+            <p>Follow us on: <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+        </div>
+    </footer>
+
+    </body>
+</html>

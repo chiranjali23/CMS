@@ -1,0 +1,113 @@
+header{
+    height:25px;
+    text-align: center ;
+    padding: 20px;
+    background-color:#087e96;
+    color:
+    text-decoration: none; /* Remove underline */
+    }
+    
+    
+    .navbar ul {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-top: 5px;
+    }
+    
+    .navbar ul li {
+        display: inline;
+    }
+    
+    .navbar ul li a {
+        color:white;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .navbar ul li a:hover {
+        background-color: #00000076; /* Highlight color */
+        color: white;
+    }
+    
+    /* Responsive Navigation Bar */
+    @media (max-width: 768px) {
+        .navbar ul {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    
+        .navbar ul li a {
+            display: block;
+            width: 100%;
+        }
+    }
+    
+    .logo img{
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        position:relative;
+        left:-600px;
+        top: -40px;
+        border: 3px solid #0f0e0e;
+    }
+  
+
+.Image{
+    border-radius: 50%;
+    weight:50px;
+    height:200px;
+    position: relative;
+    left: 700px;
+    bottom: 530px;
+    opacity: 0.5;
+    
+}
+    
+    a{
+    text-decoration : none;
+    color : white;
+    }
+
+h1{
+    text-align: center;
+    
+}
+
+p{
+    font-size: 18px;
+    font-weight:bold ;
+}
+
+ul{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2{
+    color:rgb(228, 16, 16);
+    font-size: 30px;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #056a7e; 
+    color: white; 
+    text-align: center; 
+    padding: 20px 10px; 
+    font-size: 1em; 
+}
+
+.footer-content a {
+    color: #010508; 
+    text-decoration: none; 
+}
+
+
